@@ -1,0 +1,9 @@
+name = "font-venghak-web"
+compatibility_date = "2024-01-01"
+
+# For Pages deployment
+pages_build_output_dir = ".output/public"
+
+# Environment variables
+[vars]
+DEPLOYMENT_TYPE = "static"

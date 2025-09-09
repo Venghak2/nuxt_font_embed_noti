@@ -9,8 +9,6 @@
   onMounted(async () => {
     const sdkConfig = await $fetch('/api/config')
 
-    // If the SDK requires a global, set it only on the client (won't show in view-source)
-    // You may remove this if the SDK supports fetching config internally
     window.JAOSUA_CONFIG = {
       apiBase: sdkConfig.apiBase,
       userUid: sdkConfig.userUid,

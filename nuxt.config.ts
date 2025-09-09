@@ -4,9 +4,11 @@ export default defineNuxtConfig({
   plugins: [
     '~/plugin/service-worker.client.ts'
   ],
-  // Using auto-scanned plugins from app/plugins
+  nitro: {
+    preset: 'cloudflare-pages'
+  },
+  
   runtimeConfig: {
-    // Private (server-side only) - all sensitive data
     apiBase: process.env.API_BASE,
     userUid: process.env.USER_UID,
     vapidKey: process.env.VAPID_KEY,
