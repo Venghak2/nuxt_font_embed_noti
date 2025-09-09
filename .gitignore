@@ -1,6 +1,5 @@
 # Nuxt dev/build outputs
 .output
-.data
 .nuxt
 .nitro
 .cache
@@ -10,8 +9,13 @@ dist
 node_modules
 
 # Logs
-logs
-*.log
+*.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
 
 # Misc
 .DS_Store
@@ -19,6 +23,6 @@ logs
 .idea
 
 # Local env files
-.env
-.env.*
-!.env.example
+# .env
+# .env.*
+# !.env.example
